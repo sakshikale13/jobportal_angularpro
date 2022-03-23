@@ -22,6 +22,7 @@ import { CookieService } from './cookie.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule}from '@angular/common/http';
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
+import { OpeningsComponent } from './admin/openings/openings.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { DashboardComponent } from './admin/dashboard/dashboard.component';
     CompaniesComponent,
     OpeningComponent,
     CandidatesComponent,
-    DashboardComponent
+    DashboardComponent,
+    OpeningsComponent
   ],
   imports: [
     BrowserModule,

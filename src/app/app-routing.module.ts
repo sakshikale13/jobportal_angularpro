@@ -11,9 +11,10 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { LoginComponent } from './admin/login/login.component';
 import { CompaniesComponent } from './admin/companies/companies.component';
 import { OpeningComponent } from './admin/opening/opening.component';
-import { OpeningsComponent } from './admin/openings/openings.component';
+
 import { CandidatesComponent } from './admin/candidates/candidates.component';
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
+import { OpeningsComponent } from './admin/openings/openings.component';
 
 
 const routes: Routes = [
@@ -28,7 +29,7 @@ const routes: Routes = [
   {path:"admin/login",component:LoginComponent},
   {path:"admin/companies",component:CompaniesComponent},
   {path:"admin/opening",component:OpeningComponent},
-  {path:"admin/openings",component:OpeningsComponent},
+ {path:"admin/openings",component:OpeningsComponent},
   {path:"admin/candidates",component:CandidatesComponent},
   {path:"admin/dashboard",component:DashboardComponent}
 ];
