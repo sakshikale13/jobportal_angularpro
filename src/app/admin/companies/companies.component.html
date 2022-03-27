@@ -6,15 +6,35 @@
       
       
       <section class="site-section">
-          <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between mb-4">
+          <h1 class="h3 mb-0 text-gray-800">company
+          </h1>
+          <a class="btn btn-sm btn-success pull-right" routerLink="/admin/company">+ Company</a>
+      </div>
       
-            <div class="row mb-5 justify-content-center">
-              <div class="col-md-7 text-center">
-                <h2 class="section-title mb-2">1000 Candidates list</h2>
-              </div>
-            </div>
-            
-            <ul class="job-listings mb-5">
+            <div class="container">
+              <table>
+                <tbody>
+                  <tr *ngFor="let company of companies ;let i = index;">
+                    <td>{{(i + 1) }}</td>
+                    <div class="row align-items-center mb-5">
+          
+                      <div class="col-lg-8 mb-4 mb-lg-0">
+                        <div class="d-flex align-items-center">
+                          <!-- <div class="border p-2 d-inline-block mr-3 rounded">
+                            <img src="images/job_logo_5.jpg" alt="Image">
+                          </div> -->
+                          <!-- <div>
+                            <h2><td>{{ company.description }}</td></h2>
+                            <div> -->
+                              <td><span class="ml-0 mr-2 mb-2"><span class="icon-briefcase mr-2"></span>{{ company.name}}</span></td>
+                            <td><span class="m-2"><span class="icon-room mr-2"></span>{{company.address}}</span></td>
+                          <td><span class="m-2"><span class="mr-2"></span><span class="text-primary">{{company.city}}</span></span></td>
+                            </div>
+                          </div>
+                        </div>
+                  
+            <!-- <ul class="job-listings mb-5">
               <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
                 <a href="job-single.html"></a>
                 <div class="job-listing-logo">
@@ -35,4 +55,6 @@
                 </div>
                 
               </li>
-            </ul></div></section></div>
+            </ul></div></section></div> -->
+
+            <app-footer></app-footer>

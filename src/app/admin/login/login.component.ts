@@ -28,22 +28,23 @@ export class LoginComponent implements OnInit {
   submit = (user: any) => {
 
     // this.router.navigate(["/admin/dashboard"]);
-    let apiurl = "/admin/login";
+    let apiurl = "admin/login";
     let data = this.api.post(apiurl,
       {
         data: user
       });
     data.subscribe((mydata: any) => {
-      console.log(mydata);
+      // console.log(mydata);
       console.log(data);
 
 
       if (mydata.data.status == "success") {
-        this.cookie.set("usertype", "admins");
+        
+        this.cookie.set("usertype", "admin");
         this.cookie.set("adminid",mydata.data.id);
         this.cookie.set("name",mydata.data.name);
         this.cookie.set("authkey", mydata.data.authkey);
-        this.router.navigate(["/admin/dashboard"]);
+        this.router.navigate(["/dashboard"]);
 
       }
       else {

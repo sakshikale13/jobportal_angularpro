@@ -15,6 +15,8 @@ import { OpeningComponent } from './admin/opening/opening.component';
 import { CandidatesComponent } from './admin/candidates/candidates.component';
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import { OpeningsComponent } from './admin/openings/openings.component';
+import { AddOpeningComponent } from './admin/add-opening/add-opening.component';
+import { CompanyComponent } from './admin/company/company.component';
 
 
 const routes: Routes = [
@@ -31,7 +33,9 @@ const routes: Routes = [
   {path:"admin/opening",component:OpeningComponent},
  {path:"admin/openings",component:OpeningsComponent},
   {path:"admin/candidates",component:CandidatesComponent},
-  {path:"admin/dashboard",component:DashboardComponent}
+  {path:"admin/dashboard",component:DashboardComponent},
+  {path:"admin/add-opening",component:AddOpeningComponent},
+  {path:"company",component:CompanyComponent}
 ];
 
 @NgModule({

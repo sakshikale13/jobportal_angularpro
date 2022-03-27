@@ -1,12 +1,6 @@
 
-  <div id="top">
-
-
-    
-    
-
-
-
+  <app-header></app-header>
+  <!-- <div id="top"> -->
     <!-- HOME -->
     <section class="section-hero overlay inner-page bg-image" style="background-image: url('../.././../assets/images/hero_1.jpg');" id="home-section">
       <div class="container">
@@ -64,20 +58,20 @@
               <div class="row form-group">
                 <div class="col-md-12 mb-3 mb-md-0">
                   <label class="text-black" for="fname">Email</label>
-                  <input type="text" id="fname" class="form-control" placeholder="Email address">
+                  <input type="text" id="fname" class="form-control" placeholder="Email address" formControlName="email">
                 </div>
               </div>
               <div class="row form-group mb-4">
                 <div class="col-md-12 mb-3 mb-md-0">
                   <label class="text-black" for="fname">Password</label>
-                  <input type="password" id="fname" class="form-control" placeholder="Password">
+                  <input type="password" id="fname" class="form-control" placeholder="Password" formControlName="password">
                 </div>
               </div>
 
               <div class="row form-group">
               
                 <div class="col-md-12">
-                  <input type="submit" value="login" class="btn btn-primary btn-user btn-block"   value="login">
+                  <input type="submit" value="login" class="btn btn-primary btn-user btn-block" [disabled]="!user.valid " value="login">
                 </div>
               </div>
 
@@ -88,6 +82,7 @@
    
    
   </div>
+  <app-footer></app-footer>
   
 
   

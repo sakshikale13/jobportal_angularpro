@@ -23,6 +23,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule}from '@angular/common/http';
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import { OpeningsComponent } from './admin/openings/openings.component';
+import { CompanyComponent } from './admin/company/company.component';
+import { AddOpeningComponent } from './admin/add-opening/add-opening.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,9 @@ import { OpeningsComponent } from './admin/openings/openings.component';
     OpeningComponent,
     CandidatesComponent,
     DashboardComponent,
-    OpeningsComponent
+    OpeningsComponent,
+    CompanyComponent,
+    AddOpeningComponent
   ],
   imports: [
     BrowserModule,
